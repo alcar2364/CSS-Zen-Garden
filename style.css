@@ -36,7 +36,7 @@ header {
 	justify-content: center;
 	color: #03ffc4;
 	margin: auto;
-	background-color: #000;
+	background: #000;
 	border-radius: 50%;
 	width: 90vw;
 	height: 90vw;
@@ -99,10 +99,15 @@ a:hover{
 	transition: all 2s ease;
 }
 
+.preamble {
+	border: 10px solid #000;
+}
+
 h3 {
 	background: #000;
 	font-family: "Rock Salt", cursive;
 	color: #03ffc4;
+	margin-top: 0;
 	padding: 2.4vw;
 	animation: text-shadow 10s ease infinite both;
 }
@@ -111,6 +116,7 @@ h3 {
 	order: 3;
 	margin: 5% 0;
 	background: #ffc403;
+	border: 10px solid #000;
 }
 .main h3 {
 	margin-top: 0;
@@ -119,6 +125,7 @@ h3 {
 	order: 2;
 	background: #ffc403;
 	margin: 5% 0;
+	border: 10px solid #000;
 }
 
 .select {
@@ -141,4 +148,10 @@ li {
 
 .design-selection ul {
 	flex-direction: column;
+}
+
+/*larger mobile*/
+
+@media screen and (min-width: 500) {
+
 }
