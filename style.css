@@ -27,6 +27,7 @@ body {
 .intro {
 	background-color: #ffc403;
 	order: 1
+	margin: 5% 0;
 }
 
 header {
@@ -63,22 +64,26 @@ header h1 {
 }
 
 header h2 {
-	font-size: 4vw;
+	font: 4vw "Roboto", sans-serif;
 	margin: 1.6vw;
 	text-shadow: 0 0 1em #03ffc4;
 	animation: text-shadow 10s ease 2s infinite both;
 }
 
 p {
+	padding: 10px;
 }
 
 abbr {
 	text-decoration: none;
 }
 
-.summary a {
+a {
+	display: inline-block;
 	color: #fff;
+	font-family: "Roboto", sans-serif;
 	text-decoration: none;
+	margin: 2px;
 	box-shadow: 0 0 2px 0 #c403ff;
 	padding: 2px;
 	background-color: #c403ff;
@@ -86,7 +91,7 @@ abbr {
 	transition: all 0.5s ease;
 }
 
-.summary a:hover{
+a:hover{
 	color: #c403ff;
 	box-shadow: 0 0 2px 0 #fff;
 	background-color: #fff;
@@ -94,10 +99,46 @@ abbr {
 	transition: all 2s ease;
 }
 
-.main {
-	order: 3;
+h3 {
+	background: #000;
+	font-family: "Rock Salt", cursive;
+	color: #03ffc4;
+	padding: 2.4vw;
+	animation: text-shadow 10s ease infinite both;
 }
 
+.main {
+	order: 3;
+	margin: 5% 0;
+	background: #ffc403;
+}
+.main h3 {
+	margin-top: 0;
+}
 .sidebar {
 	order: 2;
+	background: #ffc403;
+	margin: 5% 0;
+}
+
+.select {
+	margin-top: 0;
+}
+
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 10px;
+	padding: 10px;
+}
+
+.design-selection ul {
+	flex-direction: column;
 }
