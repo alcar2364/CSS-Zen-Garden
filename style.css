@@ -77,10 +77,21 @@ abbr {
 }
 
 .summary a {
-	color: #c403ff;
+	color: #fff;
 	text-decoration: none;
-	border: 1px solid #c403ff;
-	text-shadow: 0 0 5px #fff;
+	box-shadow: 0 0 2px 0 #c403ff;
+	padding: 2px;
+	background-color: #c403ff;
+	text-shadow: 0 0 10px #fff;
+	transition: all 0.5s ease;
+}
+
+.summary a:hover{
+	color: #c403ff;
+	box-shadow: 0 0 2px 0 #fff;
+	background-color: #fff;
+	text-shadow: 0 0 10px #c403ff;
+	transition: all 2s ease;
 }
 
 .main {
