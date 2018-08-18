@@ -26,8 +26,8 @@ body {
 
 .intro {
 	background-color: #ffc403;
+	border: 1.6vw solid #000;
 	order: 1
-	margin: 5% 0;
 }
 
 header {
@@ -35,39 +35,64 @@ header {
 	align-items: center;
 	justify-content: center;
 	color: #03ffc4;
-	margin: auto;
-	background: #000;
+	margin: 4.8vw auto;
+	background: radial-gradient(circle at 50% 120%, #323232, #0a0a0a 80%, #000000 100%);
 	border-radius: 50%;
-	width: 90vw;
-	height: 90vw;
+	width: 80vw;
+	height: 80vw;
+	box-shadow: 0 0 7.25vw 3vw #03ffc4;
 }
+header::before {
+  content: "";
+  position: absolute;
+  background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  opacity: 0.6;
+  height: 80vw;
+  width: 80vw;
+  filter: blur(10px);
+  z-index: 2;
+}
+
+header::after {
+	content: "";
+  width: 80vw;
+  height: 80vw;
+  position: absolute;
+	top: 8.89vw;
+  left: 8.89vw;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+  transform: translateX(15.02vw) translateY(-24vw) skewX(20deg);
+  filter: blur(3.62vw);
+}
+
 @keyframes text-shadow {
-	10% {text-shadow: 0 0 2.5em #03ffc4;}
-	11% {text-shadow: none}
-	23% {text-shadow: 0 0 2.5em #03ffc4;}
-	35% {text-shadow: none}
-	40% {text-shadow: 0 0 2.5em #03ffc4;}
-	60% {text-shadow: 0 0 2.5em #03ffc4;}
-	65% {text-shadow: none}
-	66% {text-shadow: 0 0 2.5em #03ffc4;}
-	75% {text-shadow: 0 0 2.5em #03ffc4;}
-	86% {text-shadow: none}
-	100% {text-shadow: 0 0 2.5em #03ffc4;}
+	10% {text-shadow: 0 0 9vw #03ffc4, 0 0 1vw #03ffc4;}
+	15% {text-shadow: 0 0 2vw #03ffc4, 0 0 1vw #03ffc4;}
+	23% {text-shadow: 0 0 13.5vw #03ffc4, 0 0 1vw #03ffc4;}
+	35% {text-shadow: 0 0 2vw #03ffc4, 0 0 1vw #03ffc4;}
+	40% {text-shadow: 0 0 18vw #03ffc4, 0 0 1vw #03ffc4;}
+	60% {text-shadow: 0 0 9vw #03ffc4, 0 0 1vw #03ffc4;}
+	65% {text-shadow: 0 0 2vw #03ffc4, 0 0 1vw #03ffc4;}
+	70% {text-shadow: 0 0 18vw #03ffc4, 0 0 1vw #03ffc4;}
+	75% {text-shadow: 0 0 9vw #03ffc4, 0 0 1vw #03ffc4;}
+	85% {text-shadow: 0 0 2vw #03ffc4, 0 0 1vw #03ffc4;}
+	100% {text-shadow: 0 0 18vw #03ffc4, 0 0 1vw #03ffc4;}
 }
 
 header h1 {
-	font: 9.66vw "Rock Salt", cursive;
+	font: 8vw "Rock Salt", cursive;
 	margin: 1.6vw;
 	padding: 2vw;
-	animation: text-shadow 10s ease infinite both;
+	animation: text-shadow 10s ease infinite alternate;
 	transform: rotate(-10deg);
 }
 
 header h2 {
-	font: 4vw "Roboto", sans-serif;
+	font: 3.31vw "Roboto", sans-serif;
 	margin: 1.6vw;
-	text-shadow: 0 0 1em #03ffc4;
-	animation: text-shadow 10s ease 2s infinite both;
+	text-shadow: 0 0 2vw #03ffc4, 0 0 1vw #03ffc4;
 }
 
 p {
@@ -100,7 +125,7 @@ a:hover{
 }
 
 .preamble {
-	border: 10px solid #000;
+
 }
 
 h3 {
@@ -109,14 +134,14 @@ h3 {
 	color: #03ffc4;
 	margin-top: 0;
 	padding: 2.4vw;
-	animation: text-shadow 10s ease infinite both;
+	text-shadow: 0 0 2vw #03ffc4, 0 0 1vw #03ffc4;
 }
 
 .main {
 	order: 3;
 	margin: 5% 0;
 	background: #ffc403;
-	border: 10px solid #000;
+	border: 1.6vw solid #000;
 }
 .main h3 {
 	margin-top: 0;
@@ -125,7 +150,7 @@ h3 {
 	order: 2;
 	background: #ffc403;
 	margin: 5% 0;
-	border: 10px solid #000;
+	border: 1.6vw solid #000;
 }
 
 .select {
